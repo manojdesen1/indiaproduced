@@ -1,35 +1,137 @@
+<style>
+  .header {
+    background-image: url('two.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'fantasy';
+    color: #ffffff;
+    text-shadow: 2px 2px #000000;
+  }
+</style>
+
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <title>Sample Deployment</title>
+  <meta charset="UTF-8">
+  <title>APOLLO HOSPITALS</title>
   <style>
     body {
-      color: #ffffff;
-      background-color: #0188cc;
-      font-family: Arial, sans-serif;
-      font-size: 14px;
+      background-image: url('doc.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
     }
-    
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: #F7F7F7;
+    }
     h1 {
-      font-size: 500%;
-      font-weight: normal;
-      margin-bottom: 0;
+      font-size: 40px;
+      color: black;
     }
-    
     h2 {
-      font-size: 200%;
-      font-weight: normal;
-      margin-bottom: 0;
+      font-size: 20px;
+      color: black;
+    }
+    form {
+      margin: 50px;
+      padding: 20px;
+      background-color: #F7F7F7;
+    }
+    label {
+      font-size: 18px;
+      color: black;
+      display: block;
+      margin-bottom: 10px;
+    }
+    input[type="text"], input[type="email"], input[type="password"], select, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      resize: vertical;
+      font-size: 16px;
+      color: blue;
+    }
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+    }
+    .form-container {
+      margin: 20px;
     }
   </style>
 </head>
 <body>
-  <div align="center">
-    <h1>Waaw, Congratulations Prabhakar you did it ...</h1>
-    <h2>This application was deployed using AWS CodeDeploy.</h2>
-    <p>For next steps, read the <a href="http://aws.amazon.com/documentation/codedeploy">AWS CodeDeploy Documentation</a>.</p>
-  </div>
-</body>
-</html>
+  <header>
+    <h1>INDIA PRODUCED</h1>
+    <form action="in.py">
+      <input type="submit" value="Insurance">
+    </form>
+    <form action="pf.py">
+      <input type="submit" value="Our Portfolio">
+    </form>
+    <form action="oc.py">
+      <input type="submit" value="Our Clients">
+    </form>
+    <form action="cu.py">
+      <input type="submit" value="Reach Us">
+    </form>
+  </header>
 
+  <div class="container">
+    <div class="form-container">
+      <h2>User Sign-Up</h2>
+      <form action="login.py" method="POST">
+        <label for="uname">Username</label>
+        <input type="text" id="uname" name="uname" placeholder="Enter username">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter email">
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="pass1" placeholder="Enter password">
+
+        <label for="password2">Confirm Password</label>
+        <input type="password" id="password2" name="pass2" placeholder="Re-enter password">
+
+        <input type="submit" value="Sign Up">
+      </form>
+      <p>Already have an account? <a href="user.html">Login</a></p>
+    </div>
+    <div class="form-container">
+      <h2>IP TEAM TEAM</h2>
+      <form action="admin.py" method="POST">
+        <label for="uname">Username</label>
+        <input type="text" id="uname" name="uname" placeholder="Enter username">
+
+        <label for="text">APOLLO REG NO:</label>
+        <input type="text" id="email" name="reg" placeholder="apollo reg no">
+
+        <label for="password">password</label>
+        <input type="password" id="password" name="pass1" placeholder="Enter password">
+
+        <label for="password2">Confirm Password</label>
+        <input type="password" id="password2" name="pass2" placeholder="Re-enter password">
+
+        <input type="submit" value="signup">
+      </form>
+      <p>Already have an account? <a href="main.html">Login</a></p>
+    </div>
