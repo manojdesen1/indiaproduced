@@ -9,7 +9,7 @@ files:
     owner: apache
     group: apache
     mode: 0644
-
+    
 hooks:
   BeforeInstall:
     - location: scripts/install_dependencies
