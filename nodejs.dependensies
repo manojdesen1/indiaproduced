@@ -1,3 +1,13 @@
+#npm commands 
+apt-get update
+apt-get install npm
+npm install
+npm start
+
+
+
+
+
 #npm or yarn for building the nodejs or react appilication
   npm install
   npm start
