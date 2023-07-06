@@ -1,11 +1,7 @@
 version: 0.0
 os: linux
 files:
-  - source: /index.html
-    destination: /var/www/html/
-  - source: /main.html
-    destination: /var/www/html/
-  - source: /user.html
+  - source: /src/
     destination: /var/www/html/
 hooks:
   BeforeInstall:
